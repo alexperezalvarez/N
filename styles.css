@@ -35,7 +35,7 @@ blockquote {
         font-family: 'Baguet Script', cursive;
     }
 
-    h1 {
+    h2 {
         color: pink;
     }
 }
@@ -51,7 +51,7 @@ blockquote {
         font-family: 'Algerian', sans-serif;
     }
 
-    h1 {
+    h2 {
         color: red;
     }
 }
@@ -62,7 +62,7 @@ blockquote {
         font-family: 'Georgia', serif;
     }
 
-    h1 {
+    h2 {
         color: blue;
     }
 }
