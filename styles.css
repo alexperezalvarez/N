@@ -1,3 +1,4 @@
+/* Estilos comunes */
 body {
     font-family: 'Arial', sans-serif;
 }
@@ -10,6 +11,7 @@ header.jumbotron {
 
 footer {
     background-color: #f8f9fa;
+    color: #6c757d;
 }
 
 #about, #messages {
@@ -19,11 +21,48 @@ footer {
 
 h2 {
     margin-bottom: 30px;
-    color: pink;
 }
 
 blockquote {
     border-left: 5px solid #f8f9fa;
     padding-left: 10px;
     margin: 20px 0;
+}
+
+/* Estilos específicos para iPhone */
+@media only screen and (max-device-width: 414px) and (orientation: portrait) and (min-device-pixel-ratio: 2) {
+    body {
+        font-family: 'Baguet Script', cursive;
+    }
+
+    h1 {
+        color: pink;
+    }
+}
+
+/* Estilos específicos para Android */
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+    @font-face {
+        font-family: 'Algerian';
+        src: url('ruta/a/la/fuente/Algerian.ttf') format('truetype');
+    }
+
+    body {
+        font-family: 'Algerian', sans-serif;
+    }
+
+    h1 {
+        color: red;
+    }
+}
+
+/* Estilos específicos para PC */
+@media only screen and (min-width: 1024px) {
+    body {
+        font-family: 'Georgia', serif;
+    }
+
+    h1 {
+        color: blue;
+    }
 }
