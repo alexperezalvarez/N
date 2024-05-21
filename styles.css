@@ -30,13 +30,17 @@ blockquote {
 }
 
 /* Estilos específicos para iPhone */
-@media only screen and (max-device-width: 414px) and (orientation: portrait) and (min-device-pixel-ratio: 2) {
+@media only screen and (max-device-width: 414px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
     body {
         font-family: 'Baguet Script', cursive;
     }
 
+    h1 {
+        color: blue;
+    }
+
     h2 {
-        color: pink;
+        color: red; /* Color específico para h2 en iPhone */
     }
 }
 
@@ -44,15 +48,18 @@ blockquote {
 @media only screen and (max-device-width: 480px) and (orientation: portrait) {
     @font-face {
         font-family: 'Algerian';
-        src: url('ruta/a/la/fuente/Algerian.ttf') format('truetype');
     }
 
     body {
         font-family: 'Algerian', sans-serif;
     }
 
+    h1 {
+        color: green;
+    }
+
     h2 {
-        color: red;
+        color: pink; /* Color específico para h2 en Android */
     }
 }
 
@@ -62,7 +69,11 @@ blockquote {
         font-family: 'Georgia', serif;
     }
 
-    h2 {
+    h1 {
         color: blue;
+    }
+
+    h2 {
+        color: purple; /* Color específico para h2 en PC */
     }
 }
