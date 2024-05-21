@@ -36,11 +36,11 @@ blockquote {
     }
 
     h1 {
-        color: blue;
+        color: red;
     }
 
     h2 {
-        color: red; /* Color específico para h2 en iPhone */
+        color: red; /* Cambié el color a rojo */
     }
 }
 
